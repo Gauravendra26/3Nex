@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_110sdp"
+           android:layout_margin="@dimen/_7sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/c_shap"
+            android:elevation="@dimen/_5sdp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rlCardCat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:layout_margin="@dimen/_1sdp"
+               android:layout_centerInParent="true"
+                app:cardCornerRadius="@dimen/_10sdp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rlCardCat"
+
+                    >
+                    <ImageView
+                        android:id="@+id/imgP"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_78sdp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                         />
+                <RelativeLayout
+                    android:id="@+id/rlLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_below="@+id/imgP"
+
+                    android:background="#BAB4B4">
+
+                </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvPname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlLine"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:singleLine="true"
+                        android:text="Electronics"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp" />
+
+                </RelativeLayout>
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

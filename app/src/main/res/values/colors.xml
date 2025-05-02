@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="kala">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main">#00e0c6</color>
+    <color name="text">#D3313333</color>
+    <color name="profiletext">#019393</color>
+    <color name="logouttext">#f4320f</color>
+    <color name="logo">#019393</color>
+    <color name="buy_now">#016170</color>
+    <color name="border">#8F706D6D</color>
+    <color name="etblack">#FF000000</color>
+    <color name="ettext">#BC202222</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="darkyellow">#E4B123</color>
+    <color name="darkRed">#A7330D</color>
+    <color name="lightgreen">#ff99cc00</color>
+    <color name="grey">#FF888888</color>
+    <color name="background">#fafafa</color>
+    <color name="gradientBlue">#9eedfe</color>
+
+</resources>

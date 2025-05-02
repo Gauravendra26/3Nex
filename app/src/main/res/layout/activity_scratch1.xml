@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.mynexmy.nex.Activitys.Scratch1_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_scratch"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:layout_centerHorizontal="true"
+ android:layout_marginBottom="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgScratch"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:scaleType="fitXY"
+                 />
+
+            <TextView
+                android:id="@+id/tvScratch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:maxLines="2"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:text="you have won\n₹1000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <com.anupkumarpanwar.scratchview.ScratchView
+            android:id="@+id/scratchview"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            android:scaleX="1.2 "
+            android:scaleY="1.3 "
+            app:overlay_height="200dp"
+            app:overlay_image="@drawable/download_removebg"
+            app:overlay_width="200dp"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_scratch"
+        >
+        <TextView
+            android:id="@+id/tvhide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aniCongrats"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+android:gravity="center"
+            android:fontFamily="@font/proxima"
+            android:text="Congratulations\nYou Won"
+            android:textColor="#16E221"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/aniCongrats"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            app:lottie_autoPlay="true"
+android:visibility="gone"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/animation_congrats" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_scratch">
+
+        <TextView
+            android:id="@+id/tvshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:fontFamily="@font/proxima"
+            android:text="Scratch the above card to see the price"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_40sdp">
+
+        <RelativeLayout
+            android:id="@+id/rlsave"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="@dimen/_35sdp"
+            android:background="@color/border"
+
+            android:elevation="5dp">
+
+
+            <TextView
+                android:id="@+id/tvT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/proxima"
+                android:text="Add Details"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlsave1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_35sdp"
+            android:background="@color/buy_now"
+            android:visibility="gone"
+            android:elevation="5dp"
+            >
+
+
+            <TextView
+                android:id="@+id/tvT1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/proxima"
+                android:text="Add Details"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

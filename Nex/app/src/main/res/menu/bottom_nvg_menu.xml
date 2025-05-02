@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        app:cnb_iconColor="@color/main"/>
+
+    <item android:id="@+id/category"
+        android:title="Category"
+        android:icon="@drawable/category"
+        app:cnb_iconColor="@color/main"
+        />
+    <item android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/search1"
+        app:cnb_iconColor="@color/main"
+        />
+ <item android:id="@+id/wishlist"
+        android:title="Wishlist"
+        android:icon="@drawable/wishlist"
+     app:cnb_iconColor="@color/main"
+     />
+
+<item android:id="@+id/my_cart"
+        android:title="My cart"
+        android:icon="@drawable/trolley"
+     app:cnb_iconColor="@color/main"
+     />
+
+
+    <item android:id="@+id/profile"
+        android:title="Profile"
+        app:cnb_iconColor="@color/main"
+        android:icon="@drawable/profile"/>
+
+</menu>

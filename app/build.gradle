@@ -1,0 +1,128 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.mynexmy.nex'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.mynexmy.nex"
+        targetSdk 34
+        minSdk 24
+        versionCode 20
+        versionName "1.2.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("E:\\Nex\\Nex\\release.jks")
+            storePassword "3Nex@123"
+            keyAlias "3Nex"
+            keyPassword "3Nex@123"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+
+dependencies {
+    // Local AAR dependency
+    implementation files('libs/atomPaynetzSDK-release.aar')
+
+    // Updated dependencies
+    implementation 'com.github.cooltechworks:ScratchView:v1.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'androidx.activity:activity:1.8.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+    implementation 'com.github.AnupKumarPanwar:ScratchView:1.9.1'
+    implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'io.github.antwhale:AntwhaleImageSlider:1.0.1'
+    implementation 'io.github.chaosleung:pinview:1.4.4'
+    implementation 'com.github.MikeOrtiz:TouchImageView:3.6'
+
+    implementation 'com.github.dangiashish:Auto-Image-Slider:1.0.6'
+    // Room database dependenciesAC
+    def room_version = "2.6.1"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    // Lottie animation dependency
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
+    // Optional but recommended for Glide
+    implementation 'com.squareup.picasso:picasso:2.8'
+
+
+    // Image picker updated to the latest version
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+
+    // Fragment KTX
+    implementation "androidx.fragment:fragment-ktx:1.5.7"
+
+    // RxPermissions
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+
+    // RxBinding2
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.2.0'
+
+    // SwipeRefreshLayout
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    // Gson
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    // Retrofit dependencies
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    // Video player
+    implementation'com.google.android.exoplayer:exoplayer:2.18.7'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.18.7'
+
+    // Play Services dependencies
+    implementation 'com.google.android.play:asset-delivery:2.2.2'
+    implementation 'com.google.android.play:app-update:2.1.0'
+    implementation 'com.google.android.gms:play-services-base:18.0.1'
+    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+
+    // Kotlin Standard Libraries - Use only one version
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
+    // Ensure Kotlin stdlib version is consistent
+
+}
+
+configurations.all {
+    resolutionStrategy {
+        // Force the Kotlin libraries to use the same version
+        force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
+        // Ensure this matches the stdlib version
+
+    }
+}

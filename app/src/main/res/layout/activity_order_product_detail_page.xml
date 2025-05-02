@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.mynexmy.nex.OrderProductDetailPage">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imgslider"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="30dp"
+
+
+        >
+        <!--
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/pSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Services1"
+
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorEnabled="true"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorRadius="1dp"
+            app:sliderIndicatorSelectedColor="@color/main"
+            app:sliderIndicatorUnselectedColor="#4C4B4B"
+            app:sliderScrollTimeInSec="1">
+
+        </com.smarteist.autoimageslider.SliderView>
+        -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            >
+
+            <ImageView
+                android:id="@+id/btn_like"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/wish"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/baseline_keyboard_backspace_24"
+
+
+                />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgslider"
+        android:background="@color/white"
+        android:orientation="vertical"
+
+
+        >
+
+        <TextView
+            android:id="@+id/pname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/proxima"
+            android:text="Original Beats Solo Prots Solo Pro"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+
+
+            >
+
+            <LinearLayout
+                android:id="@+id/llrate"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/shape_rating"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/_5sdp">
+
+
+                <TextView
+                    android:id="@+id/rating1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/proxima"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:src="@drawable/vector_star1" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/llrate"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvrating_total1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proxima"
+                    android:text="24"
+                    android:textColor="@color/text"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proxima"
+                    android:text=" Reviews"
+                    android:textColor="@color/text"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/saleprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/proxima"
+                 android:textColor="@color/main"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
+
+            >
+
+            <TextView
+                android:id="@+id/tvdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="@font/proxima"
+                android:text="Description"
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                android:textStyle="bold"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tvrev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="50dp"
+                android:fontFamily="@font/proxima"
+                android:text="Reviews"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="55dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llRev"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvrat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/proxima"
+                        android:text="Ratings"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/llrev"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+
+                        <RelativeLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/shape_circle"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:elevation="@dimen/_5sdp"
+                            >
+
+                            <RelativeLayout
+                                android:id="@+id/llrat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_25sdp"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:id="@+id/rating2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/proxima"
+                                    android:text="5"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="@dimen/_1sdp"
+                                    android:layout_toRightOf="@+id/rating2"
+                                    android:src="@drawable/vector_star2" />
+
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_below="@id/llrat"
+                                android:layout_centerHorizontal="true"
+                                >
+                                <TextView
+                                    android:id="@+id/tvrating_total"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/proxima"
+                                    android:text="24"
+                                    android:textColor="@color/text"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/proxima"
+                                    android:text=" Reviews"
+                                    android:textColor="@color/text"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+
+                        android:background="#BAB4B4">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvrevi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/proxima"
+                        android:text="Reviews"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/llra"
+                        android:layout_width="35dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_ratin2"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/rati"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/proxima"
+                            android:text="5"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/vector_star1" />
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rllor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/imgrev"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/_80sdp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:fontFamily="@font/proxima"
+                            android:text="02 Jan 2023"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/imgrev"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tlas"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:fontFamily="@font/proxima"
+                                android:text="Lorem Ipsum"
+                                android:textColor="@color/black"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/proxima"
+                                android:text="Nice Product"
+                                android:textColor="@color/text"
+                                android:textSize="14dp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:src="@drawable/check__2_" />
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:fontFamily="@font/proxima"
+                                    android:text="Verified Buyer"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llra1"
+                        android:layout_width="35dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_ratin2"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/rati1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/proxima"
+                            android:text="4"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/vector_star1" />
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rllor1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/imgrev1"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/_80sdp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:fontFamily="@font/proxima"
+                            android:text="02 Jan 2023"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/imgrev1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tlas1"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:fontFamily="@font/proxima"
+                                android:text="Mark"
+                                android:textColor="@color/black"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/proxima"
+                                android:text="Good Product"
+                                android:textColor="@color/text"
+                                android:textSize="14dp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:src="@drawable/check__2_" />
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:fontFamily="@font/proxima"
+                                    android:text="Verified Buyer"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lldes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rrh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+
+                        >
+                        <!--
+
+                                              <com.borjabravo.readmoretextview.ReadMoreTextView
+                                                  android:id="@+id/text_view"
+                                                  android:layout_width="match_parent"
+                                                  android:layout_height="wrap_content"
+                                                  android:layout_marginTop="5dp"
+                                                  android:fontFamily="@font/proxima"
+                                                  android:text=" "
+                                                  android:textSize="@dimen/_14sdp"
+                                                  expandableTextView:colorClickableText="@color/main"
+                                                  expandableTextView:trimCollapsedText="@string/read_more"
+                                                  expandableTextView:trimExpandedText="@string/read_less"
+                                                  expandableTextView:trimLength="70"
+                                                  expandableTextView:trimMode="trimModeLength"
+                                                  android:textColor="@color/black"
+                                                  android:layout_marginBottom="@dimen/_5sdp"
+
+
+                                                  />
+                      -->
+
+                                          </RelativeLayout>
+
+
+
+                                      </LinearLayout>
+
+                                  </LinearLayout>
+                              </ScrollView>
+
+
+
+                          </LinearLayout>
+
+                          <RelativeLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="50dp"
+                              android:layout_alignParentBottom="true"
+
+
+                              >
+
+                              <RelativeLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="0.5dp"
+                                  android:layout_alignParentBottom="true"
+                                  android:layout_marginBottom="45dp"
+                                  android:background="#BAB4B4">
+
+                              </RelativeLayout>
+
+                              <RelativeLayout
+                                  android:id="@+id/rlbot"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_alignParentBottom="true">
+
+                                  <LinearLayout
+                                      android:id="@+id/llshap"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="45dp"
+                                      android:layout_alignParentBottom="true"
+                                      android:background="@color/white"
+                                      android:orientation="horizontal"
+                                      android:weightSum="2">
+
+                                      <RelativeLayout
+                                          android:layout_width="0dp"
+                                          android:layout_height="45dp"
+                                          android:layout_weight="1"
+
+
+                                          >
+
+                                          <RelativeLayout
+                                              android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              android:layout_centerInParent="true">
+
+                                              <TextView
+                                                  android:id="@+id/tvAdd"
+                                                  android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content"
+                                                  android:layout_centerInParent="true"
+                                                  android:layout_marginLeft="10dp"
+                                                  android:fontFamily="@font/proxima"
+                                                  android:text="Add To Cart"
+                                                  android:textColor="@color/buy_now"
+                                                  android:textSize="@dimen/_16sdp"
+                                                  android:textStyle="bold" />
+
+
+
+                                          </RelativeLayout>
+
+
+                                      </RelativeLayout>
+
+                                      <RelativeLayout
+                                          android:layout_width="0dp"
+                                          android:layout_height="45dp"
+                                          android:layout_weight="1">
+
+                                          <RelativeLayout
+                                              android:layout_width="wrap_content"
+                                              android:layout_height="45dp"
+
+                                              android:layout_gravity="center"
+                                              android:layout_marginHorizontal="5dp"
+                                              android:layout_marginTop="5dp"
+                                              android:layout_marginBottom="5dp"
+                                              android:background="@drawable/shape_buynow">
+
+                                              <RelativeLayout
+                                                  android:id="@+id/placeorder"
+                                                  android:layout_width="match_parent"
+                                                  android:layout_height="wrap_content"
+                                                  android:layout_centerVertical="true"
+
+
+                                                  >
+
+
+                                                  <TextView
+                                                      android:layout_width="wrap_content"
+                                                      android:layout_height="wrap_content"
+                                                      android:layout_centerHorizontal="true"
+                                                      android:layout_centerVertical="true"
+                                                      android:fontFamily="@font/proxima"
+                                                      android:text="Buy Again"
+                                                      android:textColor="@color/white"
+                                                      android:textSize="20sp"
+
+                                                      android:textStyle="bold" />
+
+                                              </RelativeLayout>
+
+                                          </RelativeLayout>
+                                      </RelativeLayout>
+
+
+                                  </LinearLayout>
+
+                              </RelativeLayout>
+
+
+                          </RelativeLayout>
+
+                      </RelativeLayout>

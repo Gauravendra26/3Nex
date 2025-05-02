@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/homeiconnew3"
+        android:title="Home"
+        app:cnb_iconColor="@color/main"/>
+
+    <item android:id="@+id/category"
+        android:title="Category"
+        android:icon="@drawable/category12"
+        app:cnb_iconColor="@color/main"
+        />
+    <item android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/search1"
+        app:cnb_iconColor="@color/main"
+        />
+
+    <item android:id="@+id/scratchcard"
+        android:title="Scartch"
+        android:icon="@drawable/crown"
+        app:cnb_iconColor="@color/main"
+        />
+
+
+<item android:id="@+id/my_cart"
+        android:title="My Cart"
+        android:icon="@drawable/shopping_cart"
+     app:cnb_iconColor="@color/main"
+    app:actionViewClass="android.widget.TextView" />
+
+    <item android:id="@+id/profile"
+        android:title="Profile"
+        app:cnb_iconColor="@color/main"
+        android:icon="@drawable/user1"/>
+
+</menu>

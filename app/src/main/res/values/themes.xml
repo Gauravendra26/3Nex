@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Nex" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="Theme.Nex" parent="Base.Theme.Nex" />
+
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="MyRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:minHeight">15dp</item>
+        <item name="android:maxHeight">15dp</item>
+        <item name="colorControlNormal">#BF636161</item>
+        <item name="colorControlActivated">#FFD700</item>
+    </style>
+
+
+        <!-- Custom Spinner Popup style -->
+        <style name="SpinnerPopup" parent="android:Widget.Spinner">
+            <item name="android:popupBackground">@drawable/spinner_dropdown_bg</item> <!-- Optional background -->
+        </style>
+
+
+
+</resources>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mynexmy.nex.Activitys.Return_Refund_policy_Activity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/proxima"
+        android:text="Return, Refund, Cancellation and Shipping Policy
+for 3NEX PRIVATE INDIA LIMITED"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/proxima"
+        android:text="Return"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:fontFamily="@font/proxima"
+        android:text="The product must be returned to us within 3 Working days from the date it has been delivered to the customer. Product must be returned with all tags attached in its original condition along with all packing material, courier receipt, invoice and other papers."
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/proxima"
+        android:text="Refund"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:fontFamily="@font/proxima"
+        android:text="Once the Product is received to the company successfully, 3NEX GLOBAL INDIA PRIVATE LIMITED will instantly initiate the refund to your source account or chosen method of refund."
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/proxima"
+        android:text="Refund and Cancellation for Service Provider Company
+Cancellation Policy"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:fontFamily="@font/proxima"
+        android:text="Please note an order can only be canceled within 24 hours of placing the order. Once the order is processed after 24 hours, no cancellation request will be entertained. However
+return is possible for all orders/products."
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+
+        />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:fontFamily="@font/proxima"
+    android:text="OR"
+    android:textColor="@color/black"
+    android:textSize="@dimen/_10sdp"
+
+    />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:fontFamily="@font/proxima"
+    android:text="Customers can CANCEL order only before the Order has been shipped /Dispatched. After the Product/s have been shipped, The Customer CANNOT Cancel the Orders. However return is possible for all orders/products."
+    android:textColor="@color/black"
+    android:textSize="@dimen/_10sdp"
+
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/proxima"
+        android:text="Shipping and Delivery Policies –"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:fontFamily="@font/proxima"
+        android:text="3NEX GLOBAL INDIA PRIVATE LIMITED ships its products to almost all parts of India. Orders placed will be shipped within 24* hrs. We ship on all days except Sunday and National Holidays."
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+
+        />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:fontFamily="@font/proxima"
+    android:text="For all areas serviced by reputed couriers, the delivery time would be within 3 to 4 business days of shipping (business days exclude Sundays and other holidays). For other areas the products will be shipped through other courier agencies may take 1-2 weeks depending on location. At times there might be unexpected delays in the delivery of your order due to unavoidable and undetermined logistics challenges beyond our control for which 3NEX GLOBAL INDIA PRIVATE LIMITED is not liable and would request its users to cooperate as 3NEX GLOBAL INDIA PRIVATE LIMITED continuously tries to nought such instances. Also, 3NEX GLOBAL INDIA PRIVATE LIMITED reserves the right to cancel your order at its sole discretion in cases where it takes longer than usual delivery time or the shipment is physically untraceable and refund the amount paid for cancelled product(s) to your source account."
+    android:textColor="@color/black"
+    android:textSize="@dimen/_10sdp"
+
+    />
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="@dimen/_10sdp"
+    android:fontFamily="@font/proxima"
+    android:text="Contact Us:-"
+    android:textColor="@color/black"
+    android:textSize="14sp"
+    android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:fontFamily="@font/proxima"
+        android:text="3NEX GLOBAL INDIA PRIVATE LIMITED"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+
+        />  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:fontFamily="@font/proxima"
+        android:text="#883 Banksia 101, 10th Cross Rd, 7th Stage BEML Layout, Mailsandra, R R
+Nagar, Bangalore, Karnataka – 560098.—
+Phone No– 18002035817
+EMAIL- info@3nex.co.in"
+        android:textColor="@color/main"
+        android:textSize="@dimen/_10sdp"
+
+        />
+
+
+</LinearLayout>

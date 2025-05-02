@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Nex"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activitys.PickNPay_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Footwear_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.TrackOrder_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Nextube_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.OTT_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Clothing_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Grocery_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Activitys.Movie_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Scratch_Delivery_Activity"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activitys.Scratchcard_placed_msg_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.ProductDetails_All_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activitys.ProductDetailPageNewest"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Viewall_Product_3_Activity"
+            android:exported="false" />
+         <activity
+            android:name=".Activitys.Scratch1_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Activitys.OrderPlacedMsg"
+            android:exported="true" />
+        <activity
+            android:name=".Activitys.ScratchCard_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Activitys.ScratchCart_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".MyAccount_Activity2"
+            android:exported="true" />
+         <activity
+            android:name=".Activitys.OrderDetails_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Activitys.NewManageAddress_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Activitys.Order_summary_Activity3"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.FAQ_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.ProductDetailPage_Featured_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductDetailPage_Newest2_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Viewall_Product_2_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Viewall_Product_1_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Product_CategoryDeatailPAge_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Activitys.Return_Refund_policy_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Category_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp_MobileNo_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Order_Summary_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderProductDetailPage"
+            android:exported="true" />
+        <activity
+            android:name=".Activitys.SelectAddress_MyCartActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activitys.TermsOfUse_Page"
+            android:exported="true" />
+        <activity
+            android:name=".Activitys.PrivacyPolicyPage"
+            android:exported="false" />
+        <activity
+            android:name=".Product_DetailPage_Activity4"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.OrderSummary_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Activitys.AboutUs_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Forget_Newpassword_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Forget_Congratulations_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Forget_OtpSubmit_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Forget_Password_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.ShareOTP_End_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Product_detail_page3_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Orders_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Otp_sharelink_Activity"
+            android:exported="true">
+
+<!--             <intent-filter> -->
+<!--             <action android:name="android.intent.action.MAIN" /> -->
+<!--             <category android:name="android.intent.category.LAUNCHER" /> -->
+<!--             </intent-filter> -->
+
+        </activity>
+        <activity
+            android:name=".Activitys.Congratulation_Scratch_Activity2"
+            android:exported="true" />
+        <activity
+            android:name=".Activitys.Change_Password_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Manage_Account_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductDetailPage2"
+            android:exported="true" />
+        <activity
+            android:name=".Activitys.CongratulationsPage"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.OtpSubmit"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.VerifyMobile"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.AddNewAddress"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Payment_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Scratch_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Activitys.ContactUspage"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp_OtpSbmit_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ProductDetailPage"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activitys.SelectAddressPage"
+            android:exported="true" />
+        <activity
+            android:name=".Signup"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".FAQPage"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

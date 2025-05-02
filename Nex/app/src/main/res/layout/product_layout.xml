@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+
+        android:orientation="horizontal"
+
+
+        >
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="95dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+
+            android:background="@drawable/shape_productimg"
+            android:elevation="10dp"
+
+
+            >
+
+            <ImageView
+                android:id="@+id/p_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/head" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/shape_productimg1"
+            android:elevation="10dp"
+
+            >
+
+            <TextView
+                android:id="@+id/p_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="80dp"
+                android:text="Original Beats Solo prots solo pro"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/proxima"
+
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/cross"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/btn_cross"
+
+
+                />
+
+            <TextView
+                android:id="@+id/p_description"
+                android:fontFamily="@font/proxima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p_name"
+                android:layout_marginStart="10dp"
+                android:text="View details"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p_description"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/p_saleprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="600"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/proxima"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/p_actualprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proxima"
+
+
+                    android:layout_marginLeft="20dp"
+                    android:text="1999.99"
+                    android:textSize="14sp"
+
+                    android:textStyle="bold"
+
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+
+
+                    >
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/add"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/add" />
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/proxima"
+
+                        android:id="@+id/p_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toLeftOf="@id/add"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/minus"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toLeftOf="@id/p_quantity"
+                        android:src="@drawable/minus" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dot_size">6dp</dimen>
+    <dimen name="dot_sizeForDetailpage">8dp</dimen>
+
+</resources>

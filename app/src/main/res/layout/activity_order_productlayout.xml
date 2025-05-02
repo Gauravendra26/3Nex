@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Order_productlayout">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/shape_productimg"
+            android:elevation="@dimen/_5sdp"
+            >
+
+            <ImageView
+                android:id="@+id/p_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                 />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/shape_productimg1"
+            android:elevation="@dimen/_5sdp"
+
+            >
+
+            <TextView
+                android:id="@+id/p_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_29sdp"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+
+                android:fontFamily="@font/proxima"
+                android:maxLines="2"
+                android:text="Noise Buds Ace"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/rlorder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/_2sdp"
+                 android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_below="@id/p_name"
+                >
+
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/proxima"
+                    android:text="Code:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:id="@+id/tv_Desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_toRightOf="@+id/tv_amount"
+                    android:fontFamily="@font/proxima"
+                    android:text=""
+                    android:textColor="@color/main"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="@dimen/_6sdp"
+
+                >
+
+
+
+                <TextView
+
+                    android:id="@+id/viewdt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:fontFamily="@font/proxima"
+                    android:text="Quantity : "
+                    android:textColor="@color/main"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:id="@+id/tvquan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/viewdt1"
+                    android:layout_marginStart="2dp"
+                    android:fontFamily="@font/proxima"
+                    android:text="10"
+                    android:textColor="@color/main"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/saleprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                     android:text="₹1000"
+                    android:textColor="@color/buy_now"
+                    android:textSize="@dimen/_12sdp"
+                  android:layout_marginTop="@dimen/_1sdp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tvprc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@id/saleprice"
+                    android:text="Price :"
+                    android:textColor="@color/buy_now"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

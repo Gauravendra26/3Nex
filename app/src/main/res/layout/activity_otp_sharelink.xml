@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+    tools:context="com.mynexmy.nex.Activitys.Otp_sharelink_Activity">
+
+    <LinearLayout
+        android:id="@+id/llAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/shape_manage">
+
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/baseline_keyboard_backspace_24"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_myc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:fontFamily="@font/proxima"
+                android:text="REFERRAL PAGE"
+                android:textColor="@color/darkRed"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/proxima"
+            android:text="Each link has 1 referral"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:id="@+id/tvSharingLinkCount"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/proxima"
+
+            android:text="Once you complete 6 links."
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvReferNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/proxima"
+            android:gravity="center"
+            android:text="By referring 6 different contacts you will get scratch card."
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvPrize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/proxima"
+            android:gravity="center"
+            android:text="If it is not done it will be invalid."
+            android:textColor="@color/darkRed"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/img_share_link"
+
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_20sdp"
+ >
+
+
+            <RelativeLayout
+                android:id="@+id/rlshare"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@color/buy_now"
+                android:elevation="@dimen/_5sdp"
+
+                >
+
+                <TextView
+                    android:id="@+id/tvshare1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:fontFamily="@font/proxima"
+                    android:text="Share link"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_toRightOf="@+id/tvshare1"
+                    android:src="@drawable/sharelink" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvrlshare1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlshare2"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_toRightOf="@+id/rlshare1"
+                android:fontFamily="@font/merriweather_regular"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlshare1"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlshare"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@color/buy_now"
+                android:elevation="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/tvshare2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:fontFamily="@font/proxima"
+                    android:text="Share link"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_toRightOf="@+id/tvshare2"
+                    android:src="@drawable/sharelink" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvrlshare2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlshare3"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_toRightOf="@+id/rlshare2"
+                android:fontFamily="@font/merriweather_regular"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlshare2"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlshare1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginTop="5dp"
+                android:background="@color/buy_now"
+                android:elevation="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/tvshare3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:fontFamily="@font/proxima"
+                    android:text="Share link"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_toRightOf="@+id/tvshare3"
+                    android:src="@drawable/sharelink" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvrlshare3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_toRightOf="@+id/rlshare3"
+                android:fontFamily="@font/merriweather_regular"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlshare3"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlshare2"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/buy_now"
+                android:elevation="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/tvshare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:fontFamily="@font/proxima"
+                    android:text="Share link"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_3sdp"
+
+                    android:layout_toRightOf="@+id/tvshare"
+                    android:src="@drawable/sharelink" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlshare4"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlshare3"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/buy_now"
+                android:elevation="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/tvshare4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:fontFamily="@font/proxima"
+                    android:text="Share link"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_3sdp"
+
+                    android:layout_toRightOf="@+id/tvshare4"
+                    android:src="@drawable/sharelink" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlshare5"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlshare4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_35sdp"
+                android:background="@color/buy_now"
+                android:elevation="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/tvshare5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:fontFamily="@font/proxima"
+                    android:text="Share link"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_3sdp"
+
+                    android:layout_toRightOf="@+id/tvshare5"
+                    android:src="@drawable/sharelink" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+android:id="@+id/rlotpBottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+>
+
+
+                <TextView
+                    android:id="@+id/tvrlshare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_150sdp"
+                  android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                 android:visibility="gone"
+                    android:fontFamily="@font/proxima"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/rlBottomfor99"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                 >
+
+                    <LinearLayout
+                        android:id="@+id/llLinkshareNotDone99"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+
+
+                            >
+                            <ImageView
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:src="@drawable/stall"
+                                android:scaleType="fitXY"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                />
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="@dimen/_10sdp"
+                                app:cardElevation="3dp"
+                                android:id="@+id/mcvStall99"
+                                android:clickable="true"
+                                android:layout_marginBottom="@dimen/_30sdp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:focusable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:rippleColor="@color/white">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:background="@color/border"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Stall"
+
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    />
+                            </com.google.android.material.card.MaterialCardView>
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+
+
+                            >
+                            <ImageView
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:src="@drawable/online"
+                                android:scaleType="fitXY"
+                                android:padding="@dimen/_4sdp"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                />
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="@dimen/_10sdp"
+                                app:cardElevation="3dp"
+                                android:id="@+id/mcvOnline99"
+                                android:clickable="true"
+                                android:layout_marginBottom="@dimen/_30sdp"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:focusable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:rippleColor="@color/white">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:background="@color/border"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Online"
+
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    />
+                            </com.google.android.material.card.MaterialCardView>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/llLinkshareDone99"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+
+
+                            >
+                            <ImageView
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:src="@drawable/stall"
+                                android:scaleType="fitXY"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                />
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="@dimen/_10sdp"
+                                app:cardElevation="3dp"
+                                android:id="@+id/mcvStallDone99"
+                                android:clickable="true"
+                                android:layout_marginBottom="@dimen/_30sdp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:focusable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:rippleColor="@color/white">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:background="@color/darkyellow"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Stall"
+
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    />
+                            </com.google.android.material.card.MaterialCardView>
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+
+
+                            >
+                            <ImageView
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:src="@drawable/online"
+                                android:scaleType="fitXY"
+                                android:padding="@dimen/_4sdp"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                />
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="@dimen/_10sdp"
+                                app:cardElevation="3dp"
+                                android:id="@+id/mcvOnlineDone99"
+                                android:clickable="true"
+                                android:layout_marginBottom="@dimen/_30sdp"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:focusable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:rippleColor="@color/white">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:background="@color/darkyellow"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Online"
+
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    />
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlBottomOthers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                 >
+                    <LinearLayout
+                        android:id="@+id/llLinkshareNotDone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+
+                        android:orientation="horizontal"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="vertical"
+
+
+                            >
+                            <ImageView
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:src="@drawable/online"
+                                android:scaleType="fitXY"
+                                android:padding="@dimen/_4sdp"
+                                android:layout_gravity="center"
+
+                                />
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="@dimen/_10sdp"
+                                app:cardElevation="3dp"
+                                android:id="@+id/mcvOnline"
+                                android:clickable="true"
+                                android:layout_marginBottom="@dimen/_30sdp"
+                                android:layout_gravity="center"
+
+                                android:focusable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:rippleColor="@color/white">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:background="@color/border"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Scratch Card"
+
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    />
+                            </com.google.android.material.card.MaterialCardView>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/llLinkshareDone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="vertical"
+
+
+                            >
+                            <ImageView
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:src="@drawable/online"
+                                android:scaleType="fitXY"
+                                android:padding="@dimen/_4sdp"
+                                android:layout_gravity="center"
+
+                                />
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="@dimen/_10sdp"
+                                app:cardElevation="3dp"
+                                android:id="@+id/mcvOnlineDone"
+                                android:clickable="true"
+                                android:layout_marginBottom="@dimen/_30sdp"
+                                android:layout_gravity="center"
+
+                                android:focusable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:rippleColor="@color/white">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:background="@color/darkyellow"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Scratch Card"
+
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    />
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
